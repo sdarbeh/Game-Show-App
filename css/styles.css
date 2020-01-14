@@ -1,12 +1,12 @@
 /* Main styles */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap");
 
 /* Variables */
 
 :root {
-  --color-win: #78CF82;
-  --color-lose: #D94545;
-  --color-start: #5b85b7;
+  --color-win: #098A1B;
+  --color-lose: #8A0E09;
+  --color-start: #132F4F;
   --color-neutral: #445069;
   --color-neutral-light: #D2D2D2;
   --color-keys: #37474F;
@@ -36,11 +36,12 @@ li, ol, ul {
 h2 {
   margin: 0;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: var(--font-size-large);
 }
 
 button {
+  cursor: pointer;
   margin: 6px;
   border: 1px solid transparent;
   padding: .5rem 1rem;
@@ -115,6 +116,7 @@ button {
 .btn__reset {
   padding: 8px;
   margin: 50px auto;
+  cursor: pointer;
   background: #FFFFFF;
   border-radius: 5px;
   font-size: var(--font-size-medium);
@@ -141,7 +143,7 @@ button {
 }
 
 .start {
-  background-color: var(--color-start);
+  background: var(--color-start);
 }
 
 .start a {
@@ -180,4 +182,24 @@ button {
 }
 .start h1 {
   font-size: 1.5rem;
+}
+
+/* Animation*/
+
+/*scroll bar*/
+    /* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-start);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightblue;
 }
